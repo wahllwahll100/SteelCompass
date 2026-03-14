@@ -1,0 +1,64 @@
+# HOW TO UPLOAD THESE FILES TO GITHUB (Browser Only)
+# ==================================================
+#
+# You need 13 files total, in this exact folder structure:
+#
+#   steelcompass/
+#   ├── .gitignore
+#   ├── .streamlit/
+#   │   └── config.toml
+#   ├── app.py                          ← MAIN FILE
+#   ├── requirements.txt
+#   ├── secrets.toml.example
+#   ├── README.md
+#   ├── components/
+#   │   ├── __init__.py
+#   │   └── ui_helpers.py
+#   └── utils/
+#       ├── __init__.py
+#       ├── api_clients.py
+#       ├── risk_engine.py
+#       ├── vendor_recommender.py
+#       └── report_generator.py
+#
+#
+# STEP-BY-STEP INSTRUCTIONS:
+# --------------------------
+#
+# 1. Go to https://github.com/YOUR_USERNAME/steelcompass
+#
+# 2. DELETE everything currently in the repo:
+#    - Click each existing file → click "..." menu → "Delete file" → commit
+#    - OR: easier method below in step 3
+#
+# 3. For EACH file listed below, do this:
+#    a) Click the green "Add file" button → "Create new file"
+#    b) In the filename box at the top, type the EXACT path shown
+#       (typing a "/" creates a folder automatically)
+#    c) Paste the file contents
+#    d) Click "Commit changes"
+#
+# FILE CREATION ORDER (do them in this order):
+#
+#   Filename to type:                    Which downloaded file to paste:
+#   ─────────────────────────────────    ─────────────────────────────────
+#   requirements.txt                     → paste from: requirements.txt
+#   .gitignore                           → paste from: .gitignore
+#   .streamlit/config.toml               → paste from: streamlit__config.toml
+#   utils/__init__.py                    → paste from: utils___init__.py
+#   utils/api_clients.py                 → paste from: utils__api_clients.py
+#   utils/risk_engine.py                 → paste from: utils__risk_engine.py
+#   utils/vendor_recommender.py          → paste from: utils__vendor_recommender.py
+#   utils/report_generator.py            → paste from: utils__report_generator.py
+#   components/__init__.py               → paste from: components___init__.py
+#   components/ui_helpers.py             → paste from: components__ui_helpers.py
+#   app.py                               → paste from: app.py  (DO THIS LAST)
+#
+# IMPORTANT: When you type "utils/__init__.py" in the filename box,
+# GitHub will automatically create the "utils" folder for you.
+# The "/" is what creates the folder — you don't create folders separately.
+#
+# 4. After all files are committed, go to your Streamlit Cloud dashboard
+#    and click "Reboot app" (or it may auto-deploy).
+#
+# That's it!
